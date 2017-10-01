@@ -2,15 +2,18 @@ package datastructure;
 
 public class SelectionSort {
     public static void sort(int[] array) {
-        int minIndex;
+        int k;
         for (int i = 0; i < array.length; i++) {
-            minIndex = i;
-            for (int j = i; j < array.length; j++) {
-                if (array[i] > array[j - 1]) {
-                    int tmep = array[i];
-                    array[i] = array[j - 1];
-                    array[j - 1] = tmep;
+            k = i;
+            for (int j = i+1; j < array.length; j++) {
+                if (array[i] > array[j]) {
+                    k = j;
                 }
+            }
+            if (i != k) {
+                int temp = array[i];
+                array[i] = array[k];
+                array[k] = temp;
             }
         }
     }
