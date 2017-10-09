@@ -1,4 +1,4 @@
-package datastructure;
+package datastructure.sort;
 
 public class BubbleSort {
     public static void sort(int[] array) {

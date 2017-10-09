@@ -1,4 +1,4 @@
-package datastructure;
+package datastructure.sort;
 
 public class SelectionSort {
     public static void sort(int[] array) {
